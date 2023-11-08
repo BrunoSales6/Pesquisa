@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 id="titulo">Formulário de pesquisa</h1>
+    <p id="descricao">Agradecemos a sua ajuda para tornar o site melhor!</p>
+    <form id="form" action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="nome">Nome completo: <input id='nome' required type="text"></label>
+            <label for="email">E-mail: <input id='email' required type="email"></label>
+            <label for="idade">Idade: <input id='idade' min="8" max="120" required type="number"></label>
+            <label for="onde">Qual o melhor modelo em sua opinião?
+                <select id="modelo">
+                    <option value="1">Rasteira</option>
+                    <option value="2">Sapatilha</option>
+                    <option value="3">Papet</option>
+                    <option value="4">Altinha</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Você usa muito no dia-a-dia nossos produtos?</legend>
+            <label for="sim">SIM <input checked name="dia-a-dia" type="radio"></label>
+            <label for="não">NÃO <input name="dia-a-dia" type="radio"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Como você descreveria nossos produtos?</legend>
+            <label for="qualidades">Bonita<input type="checkbox"></label>
+            <label for="qualidades">Confortável<input type="checkbox"></label>
+            <label for="qualidades">bom-preço<input type="checkbox"></label>
+            <label for="qualidades">Durável<input type="checkbox"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Alguma sugestão para nossos produtos?</legend>
+            <textarea placeholder="Eu gostaria da cor... em tal modelo." id="opiniao" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="submit">
+
+
+    </form>
+    
+</body>
+</html>
